@@ -2,7 +2,7 @@ package jp.techacademy.chisaki.yoshioka.kotlinlog
 
 import android.util.Log
 
-open class Human:Animal {
+open class Human:Animal,Thinkable {
 
     var hobby:String
 
@@ -15,7 +15,7 @@ open class Human:Animal {
         Log.d("kotlintest","私の名前は"+this.name + "です。年は" + this.age + "歳です。")
     }
 
-    fun think(){
+    override fun think(){
         Log.d("kotlintest","私は" + this.hobby + "について考える。")
     }
 
